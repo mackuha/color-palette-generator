@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette Generator</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body-element">
+    <header>
+      <img src="images/logo.png" alt="Magic Color Generator logo" class="logo" />
+      <p>
+        A small solo project given by <a href="https://scrimba.com/" target="_blank"><img src="images/scrimba-logo.png" alt="Scrimba logo" class="scrimba-logo" /></a> that utilizes <a href="https://www.thecolorapi.com/" class="inline-link" target="_blank">The Color API</a> to generate colors according to the selected color scheme.
+      </p>
+    </header>
+
+    <main class="main-container">
+      <div class="top-section">
+        <input type="color" id="color-picker" value="#8CB6FA" />
+        <select name="color-scheme" id="scheme-dropdown">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogous</option>
+          <option value="complement">Complementary</option>
+          <option value="analogic-complement">Analogous-complementary</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button class="btn" id="get-color-btn"><img src="images/wand.png" alt="Wand icon" class="icon-wand" /> Do the magic!</button>
+      </div>
+
+      <div class="content-section" id="content-section">
+        <!-- Javascript will render content here -->
+      </div>
+    </main>
+
+    <footer>Created by <a href="https://github.com/mackuha" target="_blank" class="inline-link">Marc Fernand Dimacuha</a></footer>
+
+    <!-- Copied to clipboard notification -->
+    <div class="copied-notif" id="notif-container">
+      <p id="notif-paragraph">
+        <span class="small-color" style="background-color: #1265ed"></span>
+        <strong>#123432</strong> copied to clipboard!
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
